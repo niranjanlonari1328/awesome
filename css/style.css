@@ -1,0 +1,549 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #303030;
+}
+
+html {
+  font-size: 10px;
+}
+
+.blue {
+  color: #0da5f1;
+  font-weight: 700;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+header .contacts {
+  color: #dbdbdb;
+  background-color: #303030;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+header .contacts .left .fa {
+  color: #0da5f1;
+  font-size: 1.8rem;
+  margin-right: 8rem;
+}
+
+header .contacts .left .grey {
+  color: #dbdbdb;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+header .contacts .white {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+header .contacts .right .fa {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+header .navigation {
+  width: 100%;
+  background-color: #fff;
+}
+
+header .navigation #my-navigation {
+  background: 0;
+  border: 0;
+  padding: 1rem;
+  margin: 0;
+}
+
+header .navigation #my-navigation .logo {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+header .navigation #my-navigation .my-lists ul li a {
+  background: 0;
+  color: grey;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+header .navigation #my-navigation .my-lists ul li a:hover {
+  color: #0da5f1;
+}
+
+header .banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/banner-bg.jpg");
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+header .banner .heading-1 {
+  width: 40%;
+  position: relative;
+  top: 16rem;
+  margin: 0 auto;
+}
+
+header .banner .heading-1 h1 {
+  font-size: 7.5rem;
+  font-weight: 100;
+  text-align: left;
+}
+
+header .banner .heading-1 p {
+  font-size: 1.7rem;
+  text-align: left;
+  font-weight: 100;
+  margin: 3rem 0;
+}
+
+header .banner .heading-1 button {
+  width: 180px;
+  height: 60px;
+  background: 0;
+  border: 1px solid #fff;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin: 1rem 0;
+}
+
+header .banner .heading-1 button:hover {
+  background-color: #0da5f1;
+  border: 0;
+}
+
+.about {
+  text-align: center;
+  color: #fff;
+}
+
+.about .heading-2 {
+  margin: 5rem 0;
+}
+
+.about .heading-2 h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.about .awesome {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  padding: 1rem 2rem;
+}
+
+.about .awesome .icons {
+  border: 1px solid #fff;
+  margin-top: 1rem;
+}
+
+.about .awesome .icons .fa {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.about .awesome .para {
+  text-align: left;
+}
+
+.about .awesome .para h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.about .awesome .para p {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+
+.about .awesome:hover {
+  background-color: #505050;
+  cursor: pointer;
+}
+
+.team {
+  color: #fff;
+  margin: 7rem 0;
+}
+
+.team .heading-3 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.team .heading-3 h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.team .awesome-team {
+  background-color: #505050;
+  padding-bottom: 3rem;
+}
+
+.team .awesome-team .image-box1 {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.team .awesome-team .image-box1 img {
+  width: 100%;
+  margin-bottom: 2rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.team .awesome-team .image-box1 img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.team .awesome-team h3 {
+  font-size: 1.8rem;
+  margin: 0 2rem;
+}
+
+.team .awesome-team h5 {
+  margin: 1rem 2rem;
+}
+
+.team .awesome-team p {
+  margin: 1rem 2rem;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+
+.team .awesome-team:hover {
+  cursor: pointer;
+}
+
+.services {
+  color: #fff;
+  margin: 7rem 0;
+}
+
+.services .heading-4 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services .heading-4 h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.services .awesome-things {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  padding: 2.5rem;
+}
+
+.services .awesome-things .fa {
+  border: 1px solid #fff;
+  font-size: 4rem;
+  font-weight: bolder;
+  padding: 2rem;
+}
+
+.services .awesome-things h5 {
+  margin: 2rem 0;
+}
+
+.services .awesome-things p {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+
+.services .awesome-things:hover {
+  background-color: #505050;
+  cursor: pointer;
+}
+
+.portfolio .heading-5 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.portfolio .heading-5 h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.portfolio .awesome-portfolio .image-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.portfolio .awesome-portfolio .image-box img {
+  max-width: 100%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  cursor: pointer;
+}
+
+.portfolio .awesome-portfolio .image-box img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.portfolio .awesome-portfolio .details {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  bottom: 40px;
+  right: 25px;
+  background: #0008;
+  color: #fff;
+  padding: 20px 10px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.portfolio .awesome-portfolio .details h1 {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.portfolio .awesome-portfolio .details p {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.portfolio .awesome-portfolio .details button {
+  width: 70px;
+  height: 30px;
+  background: 0;
+  border: 1px solid #fff;
+  font-size: 1.1rem;
+}
+
+.portfolio .awesome-portfolio .details .content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.portfolio .awesome-portfolio:hover .details {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.contact-wrapper {
+  width: 100%;
+  background-color: #000;
+  margin-top: 7rem;
+  padding: 5rem 0;
+}
+
+.contact-wrapper .contact {
+  color: #fff;
+}
+
+.contact-wrapper .contact .heading-6 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-wrapper .contact .form-part label {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.contact-wrapper .contact .form-part input {
+  width: 100%;
+  border: 1px solid #2aa5de;
+  background: 0;
+  padding: 1.5rem;
+}
+
+.contact-wrapper .contact .form-part textarea {
+  width: 100%;
+  border: 1px solid #2aa5de;
+  background: 0;
+}
+
+.contact-wrapper .contact .form-part button {
+  width: 100%;
+  border: 1px solid #2aa5de;
+  background-color: #28a8e9;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  font-weight: bolder;
+  margin: 1rem 0;
+}
+
+.contact-wrapper .contact .address {
+  margin-top: 3rem;
+}
+
+.contact-wrapper .contact .address h4 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+
+.contact-wrapper .contact .address p {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  color: #dadada;
+  line-height: 2rem;
+}
+
+.contact-wrapper .contact .address .fa {
+  text-align: center;
+  font-size: 1.8rem;
+  width: 9%;
+  border: 2px solid #fff;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.contact-wrapper .contact .address .my-hr {
+  color: gray;
+  margin-top: 2rem;
+}
+
+.contact-wrapper .contact .address h5 {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0rem 2rem;
+  font-weight: bolder;
+}
+
+.contact-wrapper .contact .address .social {
+  margin-top: 0;
+}
+
+.contact-wrapper .contact .address .grey {
+  color: #dbdbdb;
+  font-weight: 100;
+}
+
+.footer-wrapper {
+  width: 100%;
+  background-color: #303030;
+}
+
+.footer-wrapper .footer {
+  text-align: center;
+}
+
+.footer-wrapper .footer p {
+  padding: 1.5rem 0;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 9px;
+  }
+  header .home .heading-1 button {
+    width: 150px;
+    height: 50px;
+  }
+  .about .icons {
+    padding-right: 3.5rem;
+  }
+  .team .awesome-team {
+    margin-bottom: 4rem;
+  }
+  .contact-wrapper .contact .address .fa {
+    padding-right: 3.3rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+  header .contacts {
+    text-align: justify;
+    padding-left: 1rem;
+  }
+  header .contacts .left {
+    margin-bottom: 1rem;
+  }
+  header .contacts .right {
+    padding-left: 0.7rem;
+  }
+  header .home .heading-1 button {
+    width: 120px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+  .about {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .team .awesome-team {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .services {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .portfolio .awesome-portfolio {
+    text-align: center;
+  }
+  .portfolio .awesome-portfolio .details {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .contact-wrapper .contact {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 6px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

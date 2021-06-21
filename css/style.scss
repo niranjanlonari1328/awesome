@@ -1,0 +1,675 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #303030;
+}
+
+$white-color:#fff;
+$blue-color:#0da5f1;
+
+@mixin heading{
+    font-size: 4rem;
+    color: $white-color;
+}
+
+html{
+    font-size: 10px;
+}
+
+.blue{
+    color: $blue-color;
+    font-weight: 700;
+}
+
+// header starts
+
+header{
+
+    width: 100%;
+    height: 100vh;
+
+        .contacts{
+           color:#dbdbdb;
+           background-color: #303030;
+           text-align: center;
+           padding: 2rem 0;
+           
+           
+           .left{
+
+               .fa{
+                color: $blue-color;
+                font-size: 1.8rem;
+                margin-right: 8rem;
+            }
+
+            .grey{
+                color: #dbdbdb;
+                font-size: 1.5rem;
+                margin-left: 1rem;
+            }
+            
+        }
+        
+        
+        .white{
+            color:$white-color;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-left: 1rem;
+        }
+        
+        .right{
+            .fa{
+                margin: 0 1rem;
+                    color: $white-color;
+                    font-size: 1.7rem;
+                    font-weight: 100;
+                }
+            }
+            
+        }
+    }
+
+    // navigation starts
+
+    header{
+
+            .navigation{
+                width: 100%;
+                background-color: $white-color;
+
+                    #my-navigation{
+                        background: 0;
+                        border: 0;
+                        padding: 1rem;
+                        margin: 0;
+
+                        .logo{
+                            font-size: 2.5rem;
+                            font-weight: 100;
+                        }
+
+                            .my-lists{
+                                ul{
+                                    li{
+                                        a{
+                                            background: 0;
+                                            color: grey;
+                                            font-weight: 600;
+                                            font-size: 1.5rem;
+                                        }
+
+                                        a:hover{
+                                            color: $blue-color;
+                                        }
+                                    }
+                                }
+                            }
+                    }
+            }
+        
+    }
+
+    // banner starts
+
+    header{
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: url("../img/banner-bg.jpg");
+            background-size: cover;
+            color: $white-color;
+            background-attachment: fixed;
+
+                .heading-1{
+                    width: 40%;
+                   position: relative;
+                   top: 16rem;
+                   margin: 0 auto;
+                    
+                    h1{
+                        font-size: 7.5rem;
+                        font-weight: 100;
+                        text-align: left;
+
+                       
+                    }
+
+                    p{
+                        font-size: 1.7rem;
+                        text-align: left;
+                        font-weight: 100;
+                        margin: 3rem 0;
+                    }
+
+                    button{
+                        width: 180px;
+                        height: 60px;
+                        background: 0;
+                        border: 1px solid $white-color;
+                        font-size: 1.8rem;
+                        font-weight: bolder;
+                        margin: 1rem 0;
+                        
+                    }
+
+                    button:hover{
+                        background-color: $blue-color;
+                        border: 0;
+                    }
+                }
+        }
+    }
+
+    // about starts 
+
+    .about{
+        text-align: center;
+        color: $white-color;
+
+            .heading-2{
+                        margin: 5rem 0;
+
+                    h1{
+                       @include heading;
+                        
+                    }
+            }
+
+            .awesome{
+                transition-duration: 1s;
+                    padding: 1rem 2rem;
+    
+                .icons{
+                     border: 1px solid $white-color;
+                     margin-top: 1rem;
+    
+                        .fa{
+                            font-size: 2.5rem;
+                            padding:1rem 0;
+                        }
+            
+                    }
+
+                .para{
+                        text-align: left;
+                         
+    
+                        h3{
+                            font-size: 2rem;
+                            font-weight: bold;
+                        }
+    
+                        p{
+                            font-size: 1.3rem;
+                            line-height: 2.2rem;
+                        }           
+                       
+                }
+            }
+        
+            .awesome:hover{
+                background-color: #505050;
+                cursor: pointer;
+            }
+    }
+
+    // team starts
+
+    .team{
+      color: $white-color;
+      margin: 7rem 0;
+      
+        .heading-3{
+            
+            text-align: center;
+            margin-bottom: 4rem;
+            h1{
+                @include heading;
+            }
+        }
+
+        .awesome-team{
+            background-color: #505050;
+            padding-bottom: 3rem;
+            // margin: 5rem 0;
+            
+            
+            .image-box1{
+               overflow: hidden;
+               margin-bottom: 1rem;
+
+               img{
+                width: 100%;
+                margin-bottom: 2rem;
+                transition: all 1s;
+            }
+
+            img:hover{
+                transform: scale(1.2);
+            }
+
+           }
+
+            h3{
+                font-size: 1.8rem;
+                margin: 0 2rem;
+            }
+            
+            h5{
+                margin: 1rem 2rem;
+            }
+            
+            p{
+                margin: 1rem 2rem;
+                font-size: 1.3rem;
+                line-height: 2.2rem;
+            }
+        }
+
+        .awesome-team:hover{
+            cursor: pointer;
+        }
+        
+    }
+    
+    // services starts
+    
+    .services{
+                 color: $white-color;
+                 margin: 7rem 0;
+
+                 .heading-4{
+                         text-align: center;
+                         margin-bottom: 4rem;
+
+                     h1{
+                         @include heading;
+                     }
+
+                    }
+                
+                 .awesome-things{
+                             transition-duration: 1s;
+                             padding: 2.5rem;
+
+                     .fa{
+                         border: 1px solid $white-color;
+                         font-size: 4rem;
+                         font-weight: bolder;
+                         padding: 2rem;
+                         }
+
+                        h5{
+                        margin: 2rem 0;
+                         }
+
+                         p{
+                         font-size: 1.3rem;
+                         line-height: 2.2rem;
+                        }
+                    }
+
+                    .awesome-things:hover{
+                        background-color:#505050;
+                        cursor: pointer;
+                  }
+     }
+
+    //  portfolio starts
+
+    .portfolio{
+            .heading-5{
+                text-align: center;
+                margin-bottom: 4rem;
+
+                    h1{
+                        @include heading;
+                    }
+            }
+
+            .awesome-portfolio{
+                    .image-box{
+                        position: relative;
+                        overflow: hidden;
+                        margin-bottom: 3rem;
+
+                        img{
+                            max-width: 100%;
+                            transition: all 2s;
+                            cursor: pointer;
+
+                        }
+
+                        img:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+
+
+                    .details{
+                            position: absolute;
+                            top: 10px;
+                            left: 25px;
+                            bottom: 40px;
+                            right: 25px;
+                            background:#0008;
+                            color: $white-color;
+                            padding: 20px 10px;
+                            transform: scaleY(0);
+                            transition: transform 0.5s;
+                        
+                            h1{
+                                font-size: 1.3rem;
+                                color: $white-color;
+                            }
+
+                            p{
+                                color: $white-color;
+                                font-size: 1.1rem;
+                                line-height: 2rem;
+                            }
+
+                            button{
+                                width: 70px;
+                                height: 30px;
+                                background: 0;
+                                border: 1px solid $white-color;
+                                font-size: 1.1rem;
+                            }
+
+
+                            .content{
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                            
+                    }
+
+                    
+
+                    
+
+
+            }
+            .awesome-portfolio:hover .details{
+                transform: scaleY(1);
+            }
+    }
+
+    // contact starts
+
+    .contact-wrapper{
+        width: 100%;
+        background-color: #000;
+        margin-top: 7rem;
+        padding: 5rem 0;
+        
+
+        .contact{
+            color: $white-color;
+
+                .heading-6{
+                    text-align: center;
+                    margin-bottom: 4rem;
+                }
+
+                .form-part{
+                    
+                        label{
+                            font-size: 1.2rem;
+                            margin: 1rem 0;
+                        }
+
+                        input{
+                            width: 100%;
+                            border: 1px solid #2aa5de;
+                            background: 0;
+                            padding: 1.5rem;
+                        }
+
+                        textarea{
+                            width: 100%;
+                            border: 1px solid #2aa5de;
+                            background: 0;
+                        }
+
+                        button{
+                            width: 100%;
+                            border: 1px solid #2aa5de;
+                            background-color: #28a8e9;
+                            font-size: 1.2rem;
+                            padding: 1.5rem;
+                            font-weight: bolder;
+                            margin: 1rem 0;
+
+                        }
+                }
+
+                .address{
+                    margin-top: 3rem;
+
+                        h4{
+                            font-size: 1.5rem;
+                            font-weight: bolder;
+                            padding-top: 1rem;
+                        }
+                        
+                        p{
+                            margin: 1rem 0;
+                            font-size: 1.3rem;
+                            color: #dadada;
+                            line-height: 2rem;
+                        }
+
+                        .fa{
+                            text-align: center;
+                            font-size: 1.8rem;
+                            width: 9%;
+                            border: 2px solid $white-color;
+                            padding: 1.5rem 1rem;
+                            margin-top: 2rem;
+                            margin-right: 1rem;
+                        }
+
+                        .my-hr{
+                          color: gray;
+                          margin-top: 2rem;
+                        }
+                        
+                        h5{
+                            font-size: 1.5rem;
+                            display: inline-block;
+                            margin: 0rem 2rem;
+                            font-weight: bolder;
+                        }
+                        
+                        .social{
+                            margin-top: 0;
+                        }
+                        .grey{
+                            color:#dbdbdb;
+                            font-weight: 100;
+                        }
+                }
+        }
+    }
+
+    // footer starts
+
+    .footer-wrapper{
+        width: 100%;
+        background-color: #303030;
+        
+        .footer{
+            text-align: center;
+            p{
+                    padding: 1.5rem 0;
+                    color: $white-color;
+                }
+        }
+    }
+
+    // media querry starts
+    @media(max-width:1200px){
+        html{
+            font-size: 9px;
+        }
+    }
+
+    @media(max-width:992px){
+        html{
+            font-size: 9px;
+        }
+
+        header{
+
+            .home{
+
+                .heading-1{
+
+                    button{
+                        width: 150px;
+                        height: 50px;
+                    }
+            }
+            }
+        }
+
+        .about{
+            
+            .icons{
+
+                padding-right:3.5rem ;
+                    .fa{
+                        
+                    }
+            }
+        }
+
+        .team{
+
+            .awesome-team{
+                margin-bottom: 4rem;
+            }
+        }
+
+        .contact-wrapper{
+
+            .contact{
+
+                .address{
+
+                    .fa{
+                        padding-right: 3.3rem;
+                        padding-left: 2rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media(max-width:768px){
+        html{
+            font-size: 9px;
+        }
+
+        header{
+
+            .contacts{
+               text-align: justify;
+               padding-left: 1rem;
+               
+               .left{
+                   margin-bottom: 1rem;
+                   
+                }
+                
+                .right{
+                   padding-left: 0.7rem;
+               }
+            }
+
+            .home{
+
+                .heading-1{
+
+                    button{
+                        width: 120px;
+                        height: 40px;
+                        font-size: 1.3rem;
+                    }
+            }
+            }
+        }
+
+        .about{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .team{
+
+            .awesome-team{
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 5rem;
+            }
+        }
+
+        .services{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .portfolio{
+
+            .awesome-portfolio{
+                
+                text-align: center;
+
+                .details{
+                    width: 60%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .contact-wrapper{
+
+            .contact{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media(max-width:500px){
+        html{
+            font-size: 7px;
+        }
+
+    }
+    
+    @media(max-width:400px){
+        html{
+            font-size: 6px;
+        }
+       
+    }
+
+
+    
